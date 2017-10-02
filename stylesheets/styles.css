@@ -1,0 +1,1341 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700");
+/* line 5, D:/Programs/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, D:/Programs/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, D:/Programs/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, D:/Programs/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, D:/Programs/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, D:/Programs/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, D:/Programs/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, D:/Programs/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, D:/Programs/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: ChampagneLimousines, sans-serif;
+  src: url(../source/fonts/Champagne_LimousinesBold.ttf) format("truetype");
+}
+/* line 13, ../sass/styles.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 22, ../sass/styles.scss */
+a {
+  text-decoration: none;
+}
+/* line 24, ../sass/styles.scss */
+a span {
+  display: block;
+}
+
+/* line 29, ../sass/styles.scss */
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1920px;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+/* line 39, ../sass/styles.scss */
+button:hover,
+button:active,
+button:focus {
+  outline: none;
+}
+
+/* line 45, ../sass/styles.scss */
+header {
+  flex-grow: 0;
+}
+
+/* line 49, ../sass/styles.scss */
+main {
+  flex-grow: 1;
+}
+
+/* line 53, ../sass/styles.scss */
+footer {
+  flex-grow: 0;
+}
+
+/* line 57, ../sass/styles.scss */
+.wrapper-inner, main .features-block .features, main .for-clients .price-block, main .for-clients .reviews, .about-us {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* line 64, ../sass/styles.scss */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 1001;
+}
+/* line 74, ../sass/styles.scss */
+nav a {
+  display: inline-block;
+  position: relative;
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* line 80, ../sass/styles.scss */
+nav a:hover {
+  color: #5363db;
+}
+/* line 83, ../sass/styles.scss */
+nav a:before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 0;
+  background-color: #5363db;
+  transition: width .5s ease-in-out, left .5s ease-in-out;
+  left: 50%;
+  bottom: -6px;
+}
+/* line 94, ../sass/styles.scss */
+nav a:after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 0;
+  background-color: #5363db;
+  transition: width .5s ease-in-out;
+  left: 50%;
+  bottom: -6px;
+}
+/* line 105, ../sass/styles.scss */
+nav a:hover::before {
+  width: 50%;
+  left: 0;
+}
+/* line 109, ../sass/styles.scss */
+nav a:hover::after {
+  width: 50%;
+}
+/* line 112, ../sass/styles.scss */
+nav a span {
+  display: block;
+  width: 67px;
+  text-align: center;
+  color: #5363db;
+  font-size: 24px;
+  font-family: ChampagneLimousines, sans-serif;
+}
+
+/* line 123, ../sass/styles.scss */
+header {
+  position: relative;
+  background: #5363db;
+  height: 640px;
+  overflow: hidden;
+  margin: 100px 0 0 0;
+}
+/* line 129, ../sass/styles.scss */
+header img {
+  opacity: .2;
+  position: absolute;
+  top: -100px;
+  right: 0;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+/* line 140, ../sass/styles.scss */
+header .wrapper-inner, header main .features-block .features, main .features-block header .features, header main .for-clients .price-block, main .for-clients header .price-block, header main .for-clients .reviews, main .for-clients header .reviews {
+  max-width: 1170px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 151, ../sass/styles.scss */
+header .wrapper-inner form, header main .features-block .features form, main .features-block header .features form, header main .for-clients .price-block form, main .for-clients header .price-block form, header main .for-clients .reviews form, main .for-clients header .reviews form {
+  width: 300px;
+  height: 395px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 35px;
+}
+/* line 157, ../sass/styles.scss */
+header .wrapper-inner form h3, header main .features-block .features form h3, main .features-block header .features form h3, header main .for-clients .price-block form h3, main .for-clients header .price-block form h3, header main .for-clients .reviews form h3, main .for-clients header .reviews form h3 {
+  font-size: 26px;
+  color: #5363db;
+  text-transform: capitalize;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+/* line 164, ../sass/styles.scss */
+header .wrapper-inner form input, header main .features-block .features form input, main .features-block header .features form input, header main .for-clients .price-block form input, main .for-clients header .price-block form input, header main .for-clients .reviews form input, main .for-clients header .reviews form input, header .wrapper-inner form select, header main .features-block .features form select, main .features-block header .features form select, header main .for-clients .price-block form select, main .for-clients header .price-block form select, header main .for-clients .reviews form select, main .for-clients header .reviews form select {
+  width: 230px;
+  height: 50px;
+  background: #f2f2f2;
+  color: #888888;
+  font-size: 14px;
+  line-height: 14px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 0 10px;
+  outline: none;
+}
+/* line 176, ../sass/styles.scss */
+header .wrapper-inner form input:hover, header main .features-block .features form input:hover, main .features-block header .features form input:hover, header main .for-clients .price-block form input:hover, main .for-clients header .price-block form input:hover, header main .for-clients .reviews form input:hover, main .for-clients header .reviews form input:hover, header .wrapper-inner form input:active, header main .features-block .features form input:active, main .features-block header .features form input:active, header main .for-clients .price-block form input:active, main .for-clients header .price-block form input:active, header main .for-clients .reviews form input:active, main .for-clients header .reviews form input:active, header .wrapper-inner form input:focus, header main .features-block .features form input:focus, main .features-block header .features form input:focus, header main .for-clients .price-block form input:focus, main .for-clients header .price-block form input:focus, header main .for-clients .reviews form input:focus, main .for-clients header .reviews form input:focus, header .wrapper-inner form select:hover, header main .features-block .features form select:hover, main .features-block header .features form select:hover, header main .for-clients .price-block form select:hover, main .for-clients header .price-block form select:hover, header main .for-clients .reviews form select:hover, main .for-clients header .reviews form select:hover, header .wrapper-inner form select:active, header main .features-block .features form select:active, main .features-block header .features form select:active, header main .for-clients .price-block form select:active, main .for-clients header .price-block form select:active, header main .for-clients .reviews form select:active, main .for-clients header .reviews form select:active, header .wrapper-inner form select:focus, header main .features-block .features form select:focus, main .features-block header .features form select:focus, header main .for-clients .price-block form select:focus, main .for-clients header .price-block form select:focus, header main .for-clients .reviews form select:focus, main .for-clients header .reviews form select:focus {
+  outline: none;
+  border: none;
+}
+/* line 181, ../sass/styles.scss */
+header .wrapper-inner form button, header main .features-block .features form button, main .features-block header .features form button, header main .for-clients .price-block form button, main .for-clients header .price-block form button, header main .for-clients .reviews form button, main .for-clients header .reviews form button {
+  margin: 20px 0 0 0;
+  width: 170px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  background: #5b6ceb;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  float: right;
+  transition: .4s;
+}
+/* line 193, ../sass/styles.scss */
+header .wrapper-inner form button:hover, header main .features-block .features form button:hover, main .features-block header .features form button:hover, header main .for-clients .price-block form button:hover, main .for-clients header .price-block form button:hover, header main .for-clients .reviews form button:hover, main .for-clients header .reviews form button:hover {
+  background: #475bf1;
+  box-shadow: 3px 3px 5px 0 #c8c8c8;
+}
+/* line 197, ../sass/styles.scss */
+header .wrapper-inner form button:active, header main .features-block .features form button:active, main .features-block header .features form button:active, header main .for-clients .price-block form button:active, main .for-clients header .price-block form button:active, header main .for-clients .reviews form button:active, main .for-clients header .reviews form button:active {
+  box-shadow: inset 0 0 5px 2px #c8c8c8;
+}
+/* line 202, ../sass/styles.scss */
+header .wrapper-inner .heading, header main .features-block .features .heading, main .features-block header .features .heading, header main .for-clients .price-block .heading, main .for-clients header .price-block .heading, header main .for-clients .reviews .heading, main .for-clients header .reviews .heading {
+  padding: 90px 75px;
+}
+/* line 204, ../sass/styles.scss */
+header .wrapper-inner .heading h1, header main .features-block .features .heading h1, main .features-block header .features .heading h1, header main .for-clients .price-block .heading h1, main .for-clients header .price-block .heading h1, header main .for-clients .reviews .heading h1, main .for-clients header .reviews .heading h1 {
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 209, ../sass/styles.scss */
+header .wrapper-inner .heading span, header main .features-block .features .heading span, main .features-block header .features .heading span, header main .for-clients .price-block .heading span, main .for-clients header .price-block .heading span, header main .for-clients .reviews .heading span, main .for-clients header .reviews .heading span {
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  font-size: 40px;
+}
+
+/* line 221, ../sass/styles.scss */
+main h2 {
+  margin: 125px 0 25px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #5b6ceb;
+}
+/* line 229, ../sass/styles.scss */
+main h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+  color: #777;
+  text-transform: capitalize;
+  margin: 0 0 70px 0;
+}
+/* line 237, ../sass/styles.scss */
+main .our-classes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 242, ../sass/styles.scss */
+main .our-classes .course {
+  max-width: 570px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px 0 #c8c8c8;
+  margin: 5px 0 20px 0;
+  padding: 0 25px 0 1px;
+  overflow: hidden;
+}
+/* line 250, ../sass/styles.scss */
+main .our-classes .course img {
+  float: left;
+  margin: 0 30px 0 0;
+}
+/* line 254, ../sass/styles.scss */
+main .our-classes .course h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 50px 0 35px 0;
+}
+/* line 262, ../sass/styles.scss */
+main .our-classes .course span {
+  font-size: 14px;
+  line-height: 22px;
+}
+/* line 266, ../sass/styles.scss */
+main .our-classes .course a {
+  color: #999999;
+  font-size: 14px;
+}
+/* line 269, ../sass/styles.scss */
+main .our-classes .course a span {
+  display: block;
+  margin: 18px 0 0 0;
+}
+/* line 272, ../sass/styles.scss */
+main .our-classes .course a span:hover {
+  text-decoration: underline;
+}
+/* line 279, ../sass/styles.scss */
+main .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 120px 0 0 0;
+}
+/* line 285, ../sass/styles.scss */
+main .gallery .gallery-item {
+  position: relative;
+  max-width: 475px;
+  max-height: 346px;
+  background: #7481e7;
+  transition: .4s;
+}
+/* line 291, ../sass/styles.scss */
+main .gallery .gallery-item:hover .searching {
+  display: block;
+}
+/* line 294, ../sass/styles.scss */
+main .gallery .gallery-item:hover img {
+  opacity: .2;
+}
+/* line 297, ../sass/styles.scss */
+main .gallery .gallery-item img {
+  width: 100%;
+  height: auto;
+}
+/* line 301, ../sass/styles.scss */
+main .gallery .gallery-item .searching {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #fff;
+  transition: .4s;
+}
+/* line 314, ../sass/styles.scss */
+main .gallery .gallery-item .searching:hover {
+  transform: scale(1.1);
+}
+/* line 317, ../sass/styles.scss */
+main .gallery .gallery-item .searching:active {
+  transform: scale(0.9);
+}
+/* line 320, ../sass/styles.scss */
+main .gallery .gallery-item .searching i {
+  color: #5b6ceb;
+  font-size: 26px;
+  width: 100%;
+  text-align: center;
+  line-height: 58px;
+}
+/* line 330, ../sass/styles.scss */
+main .about-us {
+  min-height: 300px;
+  margin: 125px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 337, ../sass/styles.scss */
+main .about-us .about-block {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px 20px 0;
+}
+/* line 344, ../sass/styles.scss */
+main .about-us .about-block h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #5b6ceb;
+  text-align: left;
+  margin: 0 0 28px 0;
+}
+/* line 353, ../sass/styles.scss */
+main .about-us .about-block span {
+  font-size: 14px;
+  color: #555;
+  line-height: 22px;
+}
+/* line 359, ../sass/styles.scss */
+main .about-us .slider {
+  position: relative;
+  max-width: 573px;
+  height: 300px;
+  margin: 0 30px;
+}
+/* line 364, ../sass/styles.scss */
+main .about-us .slider .slick-list {
+  overflow: hidden;
+}
+/* line 367, ../sass/styles.scss */
+main .about-us .slider .slick-arrow {
+  position: absolute;
+  top: calc(50% - 26px);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 0;
+  z-index: 1000;
+  border: none;
+  box-shadow: 0 0 8px 0 #c8c8c8;
+  transition: .4s;
+}
+/* line 379, ../sass/styles.scss */
+main .about-us .slider .slick-arrow:hover {
+  transform: scale(1.1);
+}
+/* line 382, ../sass/styles.scss */
+main .about-us .slider .slick-arrow:active {
+  transform: scale(1.05);
+}
+/* line 386, ../sass/styles.scss */
+main .about-us .slider .slick-prev {
+  left: -26px;
+}
+/* line 388, ../sass/styles.scss */
+main .about-us .slider .slick-prev:before {
+  font-family: FontAwesome;
+  content: "\f104";
+  color: #5b6ceb;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+}
+/* line 397, ../sass/styles.scss */
+main .about-us .slider .slick-next {
+  right: -26px;
+}
+/* line 399, ../sass/styles.scss */
+main .about-us .slider .slick-next:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  color: #5b6ceb;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+}
+/* line 408, ../sass/styles.scss */
+main .about-us .slider .slide-about {
+  display: inline-block;
+  width: 573px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 #c8c8c8;
+  overflow: hidden;
+}
+/* line 415, ../sass/styles.scss */
+main .about-us .slider .slide-about img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 424, ../sass/styles.scss */
+main .features-block {
+  position: relative;
+  min-height: 800px;
+  background: #5363db;
+  overflow: hidden;
+}
+/* line 429, ../sass/styles.scss */
+main .features-block img {
+  opacity: 0.2;
+  height: 100%;
+}
+/* line 433, ../sass/styles.scss */
+main .features-block .features {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 444, ../sass/styles.scss */
+main .features-block .features .features-item {
+  width: 270px;
+  margin: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 451, ../sass/styles.scss */
+main .features-block .features .features-item .features-img {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 458, ../sass/styles.scss */
+main .features-block .features .features-item .features-img img {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+/* line 470, ../sass/styles.scss */
+main .features-block .features .features-item h4 {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 27px;
+}
+/* line 478, ../sass/styles.scss */
+main .features-block .features .features-item span {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 27px;
+}
+/* line 487, ../sass/styles.scss */
+main .for-clients {
+  position: relative;
+  min-height: 1150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 50px 0;
+}
+/* line 496, ../sass/styles.scss */
+main .for-clients img {
+  position: absolute;
+  right: -100px;
+  bottom: -200px;
+  opacity: .2;
+  z-index: 0;
+}
+/* line 503, ../sass/styles.scss */
+main .for-clients .price-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  z-index: 1;
+}
+/* line 510, ../sass/styles.scss */
+main .for-clients .price-block .rate {
+  border-radius: 8px;
+  width: 375px;
+  height: 495px;
+  flex: none;
+  box-shadow: 0 0 8px 0 #c8c8c8;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+/* line 519, ../sass/styles.scss */
+main .for-clients .price-block .rate .per-month {
+  width: 100%;
+  height: 150px;
+  background: #5b6ceb;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  transition: .4s;
+  border-radius: 8px 8px 0 0;
+}
+/* line 528, ../sass/styles.scss */
+main .for-clients .price-block .rate .per-month .price {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 150px;
+  margin: 0;
+}
+/* line 535, ../sass/styles.scss */
+main .for-clients .price-block .rate .per-month .price sup {
+  font-size: 30px;
+  color: inherit;
+}
+/* line 539, ../sass/styles.scss */
+main .for-clients .price-block .rate .per-month .price b {
+  font-size: 68px;
+  color: inherit;
+}
+/* line 545, ../sass/styles.scss */
+main .for-clients .price-block .rate span {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 195px 0 45px 0;
+}
+/* line 551, ../sass/styles.scss */
+main .for-clients .price-block .rate span hr {
+  width: 100px;
+  color: #d7d7d7;
+  margin: 20px auto;
+}
+/* line 557, ../sass/styles.scss */
+main .for-clients .price-block .rate .buy {
+  display: block;
+  background: #5b6ceb;
+  border: none;
+  border-radius: 18px;
+  width: 170px;
+  height: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 auto;
+  transition: .4s;
+}
+/* line 569, ../sass/styles.scss */
+main .for-clients .price-block .rate .buy:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 3px yellow;
+}
+/* line 573, ../sass/styles.scss */
+main .for-clients .price-block .rate .buy:active {
+  transform: scale(1.05);
+}
+/* line 576, ../sass/styles.scss */
+main .for-clients .price-block .rate .buy:hover + .per-month {
+  text-shadow: 0 0 5px yellow;
+}
+/* line 582, ../sass/styles.scss */
+main .for-clients .reviews {
+  min-height: 250px;
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 #c8c8c8;
+  margin: 20px 0 0 0;
+}
+/* line 590, ../sass/styles.scss */
+main .for-clients .reviews .comments {
+  max-width: 1170px;
+  min-height: 250px;
+  overflow: hidden;
+}
+/* line 594, ../sass/styles.scss */
+main .for-clients .reviews .comments .comments-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  height: 100%;
+  padding: 40px 15px 80px 15px;
+}
+/* line 601, ../sass/styles.scss */
+main .for-clients .reviews .comments .comments-item:focus {
+  outline: none;
+}
+/* line 604, ../sass/styles.scss */
+main .for-clients .reviews .comments .comments-item .avatar {
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 0 #c8c8c8;
+  position: relative;
+  overflow: hidden;
+}
+/* line 613, ../sass/styles.scss */
+main .for-clients .reviews .comments .comments-item .avatar img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 1;
+}
+/* line 624, ../sass/styles.scss */
+main .for-clients .reviews .comments .comments-item .trainer {
+  max-width: 645px;
+  min-height: 150px;
+  position: relative;
+  margin: 30px 0;
+  padding: 0 0 50px 0;
+}
+/* line 630, ../sass/styles.scss */
+main .for-clients .reviews .comments .comments-item .trainer .comment-text {
+  display: block;
+  position: relative;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 0 0 40px;
+  margin: 0 0 20px 0;
+}
+/* line 638, ../sass/styles.scss */
+main .for-clients .reviews .comments .comments-item .trainer .comment-text:before {
+  display: inline-block;
+  content: '"';
+  font-size: 60px;
+  color: #5b6ceb;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 647, ../sass/styles.scss */
+main .for-clients .reviews .comments .comments-item .trainer .comment-text:after {
+  display: inline-block;
+  content: '"';
+  font-size: 60px;
+  color: #5b6ceb;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+}
+/* line 657, ../sass/styles.scss */
+main .for-clients .reviews .comments .comments-item .trainer .trainer-slide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 0 40px;
+}
+/* line 662, ../sass/styles.scss */
+main .for-clients .reviews .comments .comments-item .trainer .trainer-slide span {
+  font-size: 14px;
+  color: #777777;
+  line-height: 22px;
+}
+/* line 666, ../sass/styles.scss */
+main .for-clients .reviews .comments .comments-item .trainer .trainer-slide span .trainer-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #5b6ceb;
+}
+/* line 672, ../sass/styles.scss */
+main .for-clients .reviews .comments .comments-item .trainer .trainer-slide:before {
+  display: block;
+  content: '';
+  width: 1px;
+  height: 75px;
+  background: #d7d7d7;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+/* line 686, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo {
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+/* line 696, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .slick-list {
+  position: relative;
+}
+/* line 698, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .slick-list .slick-track {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 704, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .comments-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 300px;
+  padding: 0;
+  overflow: hidden;
+}
+/* line 712, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .comments-item:focus {
+  outline: none;
+}
+/* line 715, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .comments-item .avatar {
+  width: 74px;
+  height: 74px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 0 #c8c8c8;
+  position: relative;
+  overflow: hidden;
+}
+/* line 723, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .comments-item .avatar img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 1;
+}
+/* line 733, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .comments-item .trainer {
+  width: 80px;
+  height: 60px;
+  position: relative;
+}
+/* line 737, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .comments-item .trainer .comment-text {
+  display: none;
+}
+/* line 740, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .comments-item .trainer .trainer-slide {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+}
+/* line 746, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .comments-item .trainer .trainer-slide span {
+  font-size: 12px;
+  color: #777777;
+  line-height: 22px;
+}
+/* line 750, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .comments-item .trainer .trainer-slide span .trainer-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5b6ceb;
+}
+/* line 756, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .comments-item .trainer .trainer-slide:before {
+  display: none;
+}
+/* line 762, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .slick-arrow {
+  position: absolute;
+  top: calc(50% - 26px);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 0;
+  z-index: 1000;
+  border: none;
+  box-shadow: 0 0 4px 0 #c8c8c8;
+  transition: .4s;
+}
+/* line 774, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .slick-arrow:hover {
+  transform: scale(1.1);
+}
+/* line 777, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .slick-arrow:active {
+  transform: scale(1.05);
+}
+/* line 781, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .slick-prev {
+  left: 2px;
+}
+/* line 783, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .slick-prev:before {
+  font-family: FontAwesome;
+  content: "\f104";
+  color: #5b6ceb;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+/* line 792, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .slick-next {
+  right: 2px;
+}
+/* line 794, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .slick-next:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  color: #5b6ceb;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+/* line 803, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .slick-dots {
+  position: absolute;
+  top: -150px;
+  right: -550px;
+}
+/* line 807, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .slick-dots li button {
+  background: none;
+  border: 4px solid #fff;
+  box-shadow: 0 0 4px 0 #d7d7d7;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0;
+}
+/* line 816, ../sass/styles.scss */
+main .for-clients .reviews .trainer-logo .slick-dots li[aria-hidden="false"] button {
+  background: #5b6ceb;
+  box-shadow: 0 0 4px 0 #5b6ceb;
+}
+
+/* line 827, ../sass/styles.scss */
+footer {
+  background: #5b6ceb;
+  z-index: 1;
+}
+/* line 830, ../sass/styles.scss */
+footer .wrapper-inner, footer main .features-block .features, main .features-block footer .features, footer main .for-clients .price-block, main .for-clients footer .price-block, footer main .for-clients .reviews, main .for-clients footer .reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 90px 20px;
+}
+/* line 836, ../sass/styles.scss */
+footer .wrapper-inner .footer-item, footer main .features-block .features .footer-item, main .features-block footer .features .footer-item, footer main .for-clients .price-block .footer-item, main .for-clients footer .price-block .footer-item, footer main .for-clients .reviews .footer-item, main .for-clients footer .reviews .footer-item {
+  min-height: 250px;
+  padding: 15px;
+}
+/* line 839, ../sass/styles.scss */
+footer .wrapper-inner .footer-item h4, footer main .features-block .features .footer-item h4, main .features-block footer .features .footer-item h4, footer main .for-clients .price-block .footer-item h4, main .for-clients footer .price-block .footer-item h4, footer main .for-clients .reviews .footer-item h4, main .for-clients footer .reviews .footer-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 65px;
+}
+/* line 846, ../sass/styles.scss */
+footer .wrapper-inner .footer-item .f, footer main .features-block .features .footer-item .f, main .features-block footer .features .footer-item .f, footer main .for-clients .price-block .footer-item .f, main .for-clients footer .price-block .footer-item .f, footer main .for-clients .reviews .footer-item .f, main .for-clients footer .reviews .footer-item .f {
+  height: 18px;
+  margin-bottom: 65px;
+}
+/* line 850, ../sass/styles.scss */
+footer .wrapper-inner .footer-item span, footer main .features-block .features .footer-item span, main .features-block footer .features .footer-item span, footer main .for-clients .price-block .footer-item span, main .for-clients footer .price-block .footer-item span, footer main .for-clients .reviews .footer-item span, main .for-clients footer .reviews .footer-item span {
+  display: block;
+  max-width: 470px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  margin: 0 0 65px 0;
+  background: none;
+  text-align: left;
+}
+/* line 860, ../sass/styles.scss */
+footer .wrapper-inner .footer-item .social-list, footer main .features-block .features .footer-item .social-list, main .features-block footer .features .footer-item .social-list, footer main .for-clients .price-block .footer-item .social-list, main .for-clients footer .price-block .footer-item .social-list, footer main .for-clients .reviews .footer-item .social-list, main .for-clients footer .reviews .footer-item .social-list {
+  display: flex;
+}
+/* line 862, ../sass/styles.scss */
+footer .wrapper-inner .footer-item .social-list span, footer main .features-block .features .footer-item .social-list span, main .features-block footer .features .footer-item .social-list span, footer main .for-clients .price-block .footer-item .social-list span, main .for-clients footer .price-block .footer-item .social-list span, footer main .for-clients .reviews .footer-item .social-list span, main .for-clients footer .reviews .footer-item .social-list span {
+  display: block;
+  background: none;
+  width: auto;
+  height: auto;
+  margin: 0 10px;
+}
+/* line 870, ../sass/styles.scss */
+footer .wrapper-inner .footer-item img, footer main .features-block .features .footer-item img, main .features-block footer .features .footer-item img, footer main .for-clients .price-block .footer-item img, main .for-clients footer .price-block .footer-item img, footer main .for-clients .reviews .footer-item img, main .for-clients footer .reviews .footer-item img {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+/* line 873, ../sass/styles.scss */
+footer .wrapper-inner .footer-item img + span, footer main .features-block .features .footer-item img + span, main .features-block footer .features .footer-item img + span, footer main .for-clients .price-block .footer-item img + span, main .for-clients footer .price-block .footer-item img + span, footer main .for-clients .reviews .footer-item img + span, main .for-clients footer .reviews .footer-item img + span {
+  display: inline-block;
+  width: 150px;
+  margin: 0;
+}
+/* line 882, ../sass/styles.scss */
+footer span {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: #5363d8;
+  color: #b7bffc;
+  text-align: center;
+  font-size: 16px;
+  line-height: 100px;
+}
+
+@media (max-width: 1245px) {
+  /* line 899, ../sass/styles.scss */
+  header .wrapper-inner .heading, header main .features-block .features .heading, main .features-block header .features .heading, header main .for-clients .price-block .heading, main .for-clients header .price-block .heading, header main .for-clients .reviews .heading, main .for-clients header .reviews .heading {
+    padding: 45px 20px;
+  }
+  /* line 901, ../sass/styles.scss */
+  header .wrapper-inner .heading h1, header main .features-block .features .heading h1, main .features-block header .features .heading h1, header main .for-clients .price-block .heading h1, main .for-clients header .price-block .heading h1, header main .for-clients .reviews .heading h1, main .for-clients header .reviews .heading h1 {
+    font-size: 40px;
+  }
+  /* line 904, ../sass/styles.scss */
+  header .wrapper-inner .heading span, header main .features-block .features .heading span, main .features-block header .features .heading span, header main .for-clients .price-block .heading span, main .for-clients header .price-block .heading span, header main .for-clients .reviews .heading span, main .for-clients header .reviews .heading span {
+    font-size: 32px;
+  }
+
+  /* line 912, ../sass/styles.scss */
+  main .wrapper-inner h2, main .features-block .features h2, main .for-clients .price-block h2, main .for-clients .reviews h2 {
+    margin: 50px 0 20px 0;
+  }
+  /* line 915, ../sass/styles.scss */
+  main .features-block .features {
+    justify-content: center;
+  }
+  /* line 917, ../sass/styles.scss */
+  main .features-block .features .features-item {
+    margin: 5px;
+  }
+  /* line 921, ../sass/styles.scss */
+  main .for-clients .price-block {
+    justify-content: center;
+  }
+  /* line 923, ../sass/styles.scss */
+  main .for-clients .price-block .rate {
+    margin: 5px;
+  }
+  /* line 927, ../sass/styles.scss */
+  main .our-classes {
+    justify-content: center;
+  }
+  /* line 929, ../sass/styles.scss */
+  main .our-classes .course {
+    margin: 5px;
+  }
+  /* line 933, ../sass/styles.scss */
+  main .about-us {
+    padding: 0 30px;
+    justify-content: center;
+  }
+
+  /* line 941, ../sass/styles.scss */
+  footer .wrapper-inner, footer main .features-block .features, main .features-block footer .features, footer main .for-clients .price-block, main .for-clients footer .price-block, footer main .for-clients .reviews, main .for-clients footer .reviews {
+    padding: 40px 20px;
+    justify-content: center;
+  }
+  /* line 945, ../sass/styles.scss */
+  footer .wrapper-inner .footer-item h4, footer main .features-block .features .footer-item h4, main .features-block footer .features .footer-item h4, footer main .for-clients .price-block .footer-item h4, main .for-clients footer .price-block .footer-item h4, footer main .for-clients .reviews .footer-item h4, main .for-clients footer .reviews .footer-item h4, footer .wrapper-inner .footer-item .f, footer main .features-block .features .footer-item .f, main .features-block footer .features .footer-item .f, footer main .for-clients .price-block .footer-item .f, main .for-clients footer .price-block .footer-item .f, footer main .for-clients .reviews .footer-item .f, main .for-clients footer .reviews .footer-item .f {
+    margin-bottom: 10px;
+  }
+  /* line 948, ../sass/styles.scss */
+  footer .wrapper-inner .footer-item .social-list, footer main .features-block .features .footer-item .social-list, main .features-block footer .features .footer-item .social-list, footer main .for-clients .price-block .footer-item .social-list, main .for-clients footer .price-block .footer-item .social-list, footer main .for-clients .reviews .footer-item .social-list, main .for-clients footer .reviews .footer-item .social-list {
+    justify-content: center;
+  }
+}
+@media (max-width: 900px) {
+  /* line 959, ../sass/styles.scss */
+  header .wrapper-inner .heading, header main .features-block .features .heading, main .features-block header .features .heading, header main .for-clients .price-block .heading, main .for-clients header .price-block .heading, header main .for-clients .reviews .heading, main .for-clients header .reviews .heading {
+    padding: 45px 20px;
+  }
+  /* line 961, ../sass/styles.scss */
+  header .wrapper-inner .heading h1, header main .features-block .features .heading h1, main .features-block header .features .heading h1, header main .for-clients .price-block .heading h1, main .for-clients header .price-block .heading h1, header main .for-clients .reviews .heading h1, main .for-clients header .reviews .heading h1 {
+    font-size: 40px;
+  }
+  /* line 964, ../sass/styles.scss */
+  header .wrapper-inner .heading span, header main .features-block .features .heading span, main .features-block header .features .heading span, header main .for-clients .price-block .heading span, main .for-clients header .price-block .heading span, header main .for-clients .reviews .heading span, main .for-clients header .reviews .heading span {
+    font-size: 32px;
+  }
+
+  /* line 972, ../sass/styles.scss */
+  main .features-block .features {
+    justify-content: center;
+    margin: 20px 0;
+  }
+  /* line 975, ../sass/styles.scss */
+  main .features-block .features .features-item {
+    margin: 0 5px 30px 5px;
+  }
+  /* line 977, ../sass/styles.scss */
+  main .features-block .features .features-item .features-img {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+  }
+  /* line 981, ../sass/styles.scss */
+  main .features-block .features .features-item .features-img img {
+    width: 33px;
+    height: auto;
+  }
+  /* line 986, ../sass/styles.scss */
+  main .features-block .features .features-item h4 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  /* line 990, ../sass/styles.scss */
+  main .features-block .features .features-item span {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 630px) {
+  /* line 1000, ../sass/styles.scss */
+  nav {
+    justify-content: space-between;
+  }
+  /* line 1002, ../sass/styles.scss */
+  nav a {
+    margin: 0 8px;
+    font-size: 12px;
+    text-align: center;
+  }
+  /* line 1006, ../sass/styles.scss */
+  nav a span {
+    display: block;
+    width: 60px;
+    font-size: 20px;
+  }
+
+  /* line 1014, ../sass/styles.scss */
+  header .wrapper-inner, header main .features-block .features, main .features-block header .features, header main .for-clients .price-block, main .for-clients header .price-block, header main .for-clients .reviews, main .for-clients header .reviews {
+    flex-wrap: wrap;
+  }
+  /* line 1017, ../sass/styles.scss */
+  header .wrapper-inner .heading h1, header main .features-block .features .heading h1, main .features-block header .features .heading h1, header main .for-clients .price-block .heading h1, main .for-clients header .price-block .heading h1, header main .for-clients .reviews .heading h1, main .for-clients header .reviews .heading h1 {
+    font-size: 30px;
+  }
+  /* line 1020, ../sass/styles.scss */
+  header .wrapper-inner .heading span, header main .features-block .features .heading span, main .features-block header .features .heading span, header main .for-clients .price-block .heading span, main .for-clients header .price-block .heading span, header main .for-clients .reviews .heading span, main .for-clients header .reviews .heading span {
+    font-size: 24px;
+  }
+
+  /* line 1030, ../sass/styles.scss */
+  main .our-classes .course img {
+    margin-left: -50px;
+    margin-right: 10px;
+  }
+  /* line 1034, ../sass/styles.scss */
+  main .our-classes .course h3 {
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+  }
+  /* line 1038, ../sass/styles.scss */
+  main .our-classes .course span {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  /* line 1042, ../sass/styles.scss */
+  main .our-classes .course a {
+    font-size: 14px;
+  }
+  /* line 1044, ../sass/styles.scss */
+  main .our-classes .course a span {
+    margin: 14px 0 0 0;
+  }
+  /* line 1050, ../sass/styles.scss */
+  main .about-us {
+    margin: 50px auto;
+  }
+  /* line 1052, ../sass/styles.scss */
+  main .about-us .slider {
+    width: 290px;
+    height: 151px;
+    margin: 20px 0 0 0;
+  }
+  /* line 1056, ../sass/styles.scss */
+  main .about-us .slider .slick-list {
+    height: 151px;
+  }
+  /* line 1059, ../sass/styles.scss */
+  main .about-us .slider .slide-about {
+    width: 290px;
+    height: 151px;
+  }
+  /* line 1062, ../sass/styles.scss */
+  main .about-us .slider .slide-about img {
+    width: 100%;
+  }
+  /* line 1065, ../sass/styles.scss */
+  main .about-us .slider .slide-about .slide-about {
+    width: 290px;
+    height: 151px;
+  }
+  /* line 1072, ../sass/styles.scss */
+  main .features-block {
+    height: 984px;
+  }
+  /* line 1076, ../sass/styles.scss */
+  main .features-block .features .features-item .features-img {
+    display: none;
+  }
+}
+@media (max-width: 445px) {
+  /* line 1087, ../sass/styles.scss */
+  nav a {
+    margin: 0 4px;
+    font-size: 10px;
+  }
+
+  /* line 1092, ../sass/styles.scss */
+  main .for-clients .reviews .comments .comments-item {
+    flex-wrap: wrap;
+  }
+
+  /* line 1098, ../sass/styles.scss */
+  main .our-classes .course img {
+    margin-left: -100px;
+  }
+  /* line 1101, ../sass/styles.scss */
+  main .our-classes .course h3 {
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+  }
+  /* line 1105, ../sass/styles.scss */
+  main .our-classes .course span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  /* line 1109, ../sass/styles.scss */
+  main .our-classes .course a {
+    font-size: 12px;
+  }
+  /* line 1111, ../sass/styles.scss */
+  main .our-classes .course a span {
+    margin: 14px 0 0 0;
+  }
+  /* line 1119, ../sass/styles.scss */
+  main .about-us .slider .slick-arrow {
+    top: calc(100% - 32px);
+    width: 32px;
+    height: 32px;
+  }
+  /* line 1123, ../sass/styles.scss */
+  main .about-us .slider .slick-arrow:hover {
+    transform: scale(1.1);
+  }
+  /* line 1126, ../sass/styles.scss */
+  main .about-us .slider .slick-arrow:active {
+    transform: scale(1.05);
+  }
+  /* line 1130, ../sass/styles.scss */
+  main .about-us .slider .slick-prev {
+    left: 0;
+  }
+  /* line 1132, ../sass/styles.scss */
+  main .about-us .slider .slick-prev:before {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  /* line 1137, ../sass/styles.scss */
+  main .about-us .slider .slick-next {
+    right: 0;
+  }
+  /* line 1139, ../sass/styles.scss */
+  main .about-us .slider .slick-next:before {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
